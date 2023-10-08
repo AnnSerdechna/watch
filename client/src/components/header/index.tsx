@@ -6,15 +6,16 @@ import SearchSvg from '../../../public/icons/search.svg'
 import NotificationSvg from '../../../public/icons/bell.svg'
 import AvatarImg from '../../../public/images/avatar.png'
 import Image from 'next/image'
+import {IconButton} from '@/components/ui/icon-button'
 
 export const Header: FC = () => (
-  <header className={'w-full p-8'}>
+  <header className={'absolute top-0 w-full p-8 z-10'}>
     <Row justify={'between'} className={'w-full'}>
       <HeaderMenu />
 
       <Row className={'gap-6'}>
-        <SearchSvg />
-        <NotificationSvg />
+        <IconButton icon={<SearchSvg />} />
+        <IconButton icon={<NotificationSvg />} />
 
         <Row className={'gap-2'}>
           <Image src={AvatarImg} alt={'User photo'} />

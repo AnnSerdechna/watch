@@ -1,7 +1,7 @@
 import {FC, PropsWithChildren} from 'react'
 import classNames from 'classnames'
 
-type JustifyContentType = 'start' | 'between'| 'end' | 'center'
+export type JustifyContentType = 'start' | 'between'| 'end' | 'center'
 type AlignItemsType = 'start' | 'end' | 'center'
 
 type RowProps = {

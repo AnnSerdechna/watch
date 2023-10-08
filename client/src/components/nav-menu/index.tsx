@@ -24,7 +24,7 @@ const NavLink: FC<PropsWithChildren<LinkProps>> = ({ children, href }) => {
         flex 
         gap-3 
         py-3 
-        px-10 
+        px-4 
         text-white 
         opacity-80 
         rounded-lg 
@@ -32,10 +32,10 @@ const NavLink: FC<PropsWithChildren<LinkProps>> = ({ children, href }) => {
         delay-100 
         hover:bg-accent 
         hover:opacity-100 
-        hover:font-semibold
+        hover:font-medium
       `,
         {
-          'bg-accent opacity-100 font-semibold': pathname === href
+          'bg-accent opacity-100 font-medium': pathname === href
         }
         )}>
       {children}
@@ -62,7 +62,6 @@ export const NavMenu: FC<{ data: MenuItemsProps[] }> = ({data}) => (
         label={label}
         pathname={pathname}
         Icon={Icon}
-
       />
     ))}
   </ul>
