@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-white: #fff;
+  --color-black: #21201E;
+  --color-accent: #6100C2;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-white: #fff;
+    --color-black: #21201E;
+    --color-accent: #6100C2;
+  }
+} */
+
+body {
+  min-height: 100vh;
+  color: var(--color-white);
+  background: var(--color-black);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
