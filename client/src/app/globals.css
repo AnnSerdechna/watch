@@ -17,7 +17,7 @@
 } */
 
 body {
-  min-height: 100vh;  
-  color: var(--background-color);
+  min-height: 100vh;
+  color: var(--color-white);
   background: var(--color-black);
 }
